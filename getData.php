@@ -35,7 +35,7 @@ if ($customImageEnabled == "Yes") {
                     file_put_contents("cache/$poster", fopen("http://$plexServer:32400$art?X-Plex-Token=$plexToken", 'r'));
                 }
 
-                $title = "<br /><p style='font-size: 55px; -webkit-text-stroke: 2px yellow;'> $nowShowingTopText </p>";
+                $title = "<br /><p style='font-size: 70px; -webkit-text-stroke: 2px yellow;'> $nowShowingTopText </p>";
                 $display = "<img src='cache/$poster' style='width: 100%'>";
                 $info = "<p style='font-size: 25px;'>" . $clients['summary'] . "</p>";
 	    }
@@ -53,9 +53,9 @@ if ($customImageEnabled == "Yes") {
                     file_put_contents("cache/$poster", fopen("http://$plexServer:32400$art?X-Plex-Token=$plexToken", 'r'));
                 }
 
-                $title = "<br /><p style='font-size: 55px; -webkit-text-stroke: 2px yellow;'> $nowShowingTopText </p>";
+                $title = "<br /><p style='font-size: 80px; -webkit-text-stroke: 2px yellow;'> $nowShowingTopText </p>";
                 $display = "<img src='cache/$poster' style='width: 100%'>";
-                $info = "<p style='font-size: 25px;'>Episode: " . $clients['title'] . " - " . $clients['summary'] . "</p>";
+                $info = "<p style='font-size: 20px;'>Episode: " . $clients['title'] . " - " . $clients['summary'] . "</p>";
            }
         }
      }
@@ -63,7 +63,7 @@ if ($customImageEnabled == "Yes") {
 
   #If Nothing is Playing
   if ($display == NULL) {
-    $title = "<br /><p style='font-size: 55px; -webkit-text-stroke: 2px yellow;'> $comingSoonTopText </p>";
+    $title = "<br /><p style='font-size: 80px; -webkit-text-stroke: 2px yellow;'> $comingSoonTopText </p>";
    
     $UnWatchedMoviesURL = 'http://'.$plexServer.':32400/library/sections/'.$plexServerMovieSection.'/unwatched?X-Plex-Token='.$plexToken.'';
     $getMovies  = file_get_contents($UnWatchedMoviesURL);
