@@ -14,7 +14,7 @@ $customImageEnabled = 'No';
 $customImage = '';
 
 //Misc
-$comingSoonTopText = 'COMING SOON';
-$comingSoonBottomText = 'To Matt\'s Movie Theater';
-$nowShowingTopText = 'NOW SHOWING';
+$comingSoonTopText = 'PLAYING SOON';
+$comingSoonBottomText = 'at the JEscHT Plex Home Cinema';
+$nowShowingTopText = 'FEATURE PLAYING NOW';
 ?>
