@@ -63,7 +63,7 @@ if ($customImageEnabled == "Yes") {
 
   #If Nothing is Playing
   if ($display == NULL) {
-    $title = "<br /><p style='font-size: 100px; -webkit-text-stroke: 2px yellow;'> $comingSoonTopText </p>";
+    $title = "<br /><p style='font-size: 90px; -webkit-text-stroke: 2px yellow;'> $comingSoonTopText </p>";
    
     $UnWatchedMoviesURL = 'http://'.$plexServer.':32400/library/sections/'.$plexServerMovieSection.'/all?X-Plex-Token='.$plexToken.'';
     $getMovies  = file_get_contents($UnWatchedMoviesURL);
